@@ -25,6 +25,7 @@ async def main():
 
 
 if __name__ == "__main__":
+    # Only for dev phase
     logging.basicConfig(level=logging.INFO)
     try:
         print("Started")
