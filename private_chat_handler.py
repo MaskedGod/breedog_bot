@@ -21,7 +21,7 @@ private_chat_router.message.filter(ChatTypeFilter(["private"]))
 @private_chat_router.message(CommandStart())
 async def start_chat(message: types.Message):
     # await message.answer_photo(photo=get_random_image()[1],caption=f"Hello, this is {get_random_image()[0]}")
-    await message.reply("Use /photo for one\n/photo_(1-10) to get any amount of photos", reply_markup=photos_keyboard)
+    await message.reply("Use /photo for one\n/photo_(1-10) to get any amount of photos")
 
 
 @private_chat_router.message(F.text.startswith("/photo_"))
